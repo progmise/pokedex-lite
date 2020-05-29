@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex-lite</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-8">
+                <!-- Beggining of navbar -->
+                <nav id="js-navigation" class="navbar navbar-expand-lg navbar-light" style="background-color: #E3F2FD;">
+                    <!-- Image and text -->
+                    <span class="navbar-brand font-weight-bold" href="#">
+                        <img src="../icon/pokebola.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Pokedex-lite
+                    </span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link home" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pokemon
+                                </button>
+                                <!-- Sub navbar -->
+                                <div class="dropdown-menu" style="background-color: #E3F2FD;"
+                                    aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item crear" href="crear.html">Crear</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item editar" href="editar.html">Editar</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item buscar" href="buscar.html">Buscar</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item mostrar" href="#">Mostrar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Ending of navbar -->
+                <div class="container-fluid" style="background-color: #F1FAEE;">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <main class="mt-5 mb-5">
+                                <!-- Content will be loaded here -->
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12" id="listPokemons">
+                                            <!-- Medias will be dynamically created here -->
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Beggining of pagination -->
+                                    <div class="row mt-5">
+                                        <div class="col-sm-12">
+                                            <nav>
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <footer>
+                <span class="text-light font-weight-bold">Copyright &copy;2020</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

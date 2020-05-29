@@ -1,0 +1,20 @@
+/* Config for move carousel controls to the sides of the container */
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 0;
+}
+  
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 0;
+}
+
+#containerFormEvolucion {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #457B9D;
+    text-align: center;
+    line-height: 8vh;
+}
